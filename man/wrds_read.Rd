@@ -9,7 +9,7 @@ wrds_read(query, wrds, numrows = -1, data.table = TRUE)
 \arguments{
 \item{query}{string including the SQL query syntax for WRDS (see their webpage)}
 
-\item{wrds}{connection created with the wrds.connect() function.}
+\item{wrds}{connection created with the \code{wrds_connect()} function.}
 
 \item{numrows}{number of observations you want to get, default is all the available ones.}
 
@@ -19,10 +19,10 @@ wrds_read(query, wrds, numrows = -1, data.table = TRUE)
 a data.table or .frame containing the WRDS data requested
 }
 \description{
-Remember to change the username in the dbConnect call below. Before being able to open the connection, you need to follow the steps
+Before being able to open the connection, you need to follow the steps
 \href{https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/r-from-your-computer/}{here} to set up your \code{.pgpass} file.
 }
 \examples{
-data <- wrds.table( "select mgrname from tfn.s34 where fdate between '2013-01-02' and '2015-03-02' ", numrows=100)
+data <- wrds_read( "select mgrname from tfn.s34 where fdate between '2013-01-02' and '2015-03-02' ", numrows=100)
 
 }

@@ -1,9 +1,9 @@
 #' Observe Tables structure in WRDS
 #'
-#' @description Remember to change the username in the dbConnect call below. Before being able to open the connection, you need to follow the steps
+#' @description Before being able to open the connection, you need to follow the steps
 #'  [here](https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/r-from-your-computer/) to set up your `.pgpass` file.
 #'
-#' @param wrds connection created with the wrds.connect() function.
+#' @param wrds connection created with the wrds_connect() function.
 #' @return a data.frame containing the WRDS database tables structure
 #'
 #' @import DBI dplyr
@@ -12,7 +12,6 @@
 #'
 #'
 wrds_inspect <- function(wrds) {
-
 
   # query data
 

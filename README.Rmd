@@ -18,36 +18,17 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of wrds.operator is to ...
+This is a client to query data from the WRDS database. The database can be accessed using SQL queries. 
+
+The functions here allow you to inspect the data structure of the data on WRDS, and query the tables you are interested in.
+
+Before being able to use it, you will need to set up a `.pgpass` file as explained on the [WRDS website](https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/r-from-your-computer/.
 
 ## Installation
 
-You can install the released version of wrds.operator from [CRAN](https://CRAN.R-project.org) with:
+You can install the development version of the package from Pietro's Github.
 
 ``` r
-install.packages("wrds.operator")
+devtools::install_githubpackages("pietroreggiani/wrds.operator")
 ```
-
-## Example
-
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
-
-# TODO list
-
-- Edit the roxygens so that they import the right packages.
-- Edit the readme file include reference to the WRDS guide.
-
 
